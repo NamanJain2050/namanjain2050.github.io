@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>naman&#39;s blog</title>
+    <link>https://namanjain2050.github.io/</link>
+    <description>Recent content on naman&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 21 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://namanjain2050.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code Resuability and Inheritance</title>
+      <link>https://namanjain2050.github.io/post/code-reusability-and-inheritance/</link>
+      <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://namanjain2050.github.io/post/code-reusability-and-inheritance/</guid>
+      <description>&lt;p&gt;In this article we&#39;ll see a story that guides us towards inheritance&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Inheritance Syntax</title>
+      <link>https://namanjain2050.github.io/post/intro-to-inheritance-syntax/</link>
+      <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://namanjain2050.github.io/post/intro-to-inheritance-syntax/</guid>
+      <description>&lt;p&gt;In this post we&#39;ll cover very basic syntax for inheritance in Java. We&#39;ll use examples mentioned &lt;a href=&#34;https://namanjain2050.github.io/post/code-reusability-and-inheritance&#34;&gt;here&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Main Inheritance Concepts</title>
+      <link>https://namanjain2050.github.io/post/main-inheritance-concepts/</link>
+      <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://namanjain2050.github.io/post/main-inheritance-concepts/</guid>
+      <description>&lt;p&gt;We saw why one might use inheritance &lt;a href=&#34;https://namanjain2050.github.io/post/code-reusability-and-inheritance&#34;&gt;here&lt;/a&gt;. In this post we&#39;ll build on that knowledge and see more concpets relating to inheritance.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://namanjain2050.github.io/archives/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://namanjain2050.github.io/archives/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://namanjain2050.github.io/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://namanjain2050.github.io/about/</guid>
+      <description>A software developer whose mission is to build technology to solve real life problems. Equipped with the understanding &amp;amp; knowledge of natural language processing, machine learning, API Design across coding languages including Java, Python, C++/C. Extremely competitive and always eager to find easy solutions to complex problems.
+Research VidSearch: Using Deep Learning to build an End-to-End Search Engine for Video Proposed an end-to-end pipeline to search within videos using the transcripts generated from STT models.</description>
+    </item>
+    
+    <item>
+      <title>Sobre</title>
+      <link>https://namanjain2050.github.io/about.pt/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://namanjain2050.github.io/about.pt/</guid>
+      <description>Tradução em português. Apenas para demonstração, o resto do artigo não está traduzido.
+Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.</description>
+    </item>
+    
+  </channel>
+</rss>
