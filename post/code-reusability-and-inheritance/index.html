@@ -172,7 +172,7 @@ Now generally, such a system can be designed in two ways.</p>
 <p>What's happening here? We've created a seperate class for each of our shape and written the implementation of <code>rotate()</code> and <code>playSound()</code> methods 4 different times. Is it the best way to do things?
 <br><br>
 We are writing same peice of code 4 times instead what we should do is avoid this duplicacy and <strong>resue our code</strong>. Writing duplicate code is difficult to manage and is waste of time. If say I now want to change the implementation of <code>rotate()</code> function, I will have to change it at 4 places. But if I'm able to write only one implementation of my methods and somehow <em>reuse</em> it for all the shapes, that will be a better and much manageable code.
-Is it clear why doing things this way is not the best approach?
+Is it clear why doing things the naive way is not the best approach?
 <br>
 <strong>[Checkpoint 2]</strong></p>
 <h3 id="reusing-our-code-using-inheritance">Reusing our Code using Inheritance</h3>
