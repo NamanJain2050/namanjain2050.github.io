@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" data-figures="" class="page" data-mode="lit">
   <head>
-<title>Code Resuability and Inheritance | naman&#39;s blog</title>
+<title>Code Reusability and Inheritance | naman&#39;s blog</title>
 <meta charset="utf-8">
 <meta name="generator" content="Hugo 0.79.0" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -14,9 +14,9 @@
 <meta name="description" content="In this article we&#39;ll see a story that guides us towards inheritance">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="Code Resuability and Inheritance" />
+<meta name="twitter:title" content="Code Reusability and Inheritance" />
 <meta property="og:url" content="https://namanjain2050.github.io/post/code-reusability-and-inheritance/" />
-<meta property="og:title" content="Code Resuability and Inheritance" />
+<meta property="og:title" content="Code Reusability and Inheritance" />
 <meta property="og:description" content="In this article we&#39;ll see a story that guides us towards inheritance" />
 <meta property="og:image" content="https://namanjain2050.github.io/images/inherit-3-uml.png" />
 <link rel="apple-touch-icon" sizes="180x180" href='https://namanjain2050.github.io/icons/apple-touch-icon.png'>
@@ -99,7 +99,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">Code Resuability and Inheritance</h1><div class="post_meta">
+    <h1 class="post_title">Code Reusability and Inheritance</h1><div class="post_meta">
   <svg class="icon">
   <use xlink:href="#calendar"></use>
 </svg>
@@ -116,12 +116,12 @@
     
 <div class="post_share">
   Share on:
-  <a href="https://twitter.com/intent/tweet?text=Code%20Resuability%20and%20Inheritance&url=https%3a%2f%2fnamanjain2050.github.io%2fpost%2fcode-reusability-and-inheritance%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+  <a href="https://twitter.com/intent/tweet?text=Code%20Reusability%20and%20Inheritance&url=https%3a%2f%2fnamanjain2050.github.io%2fpost%2fcode-reusability-and-inheritance%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
     <svg class="icon">
   <use xlink:href="#twitter"></use>
 </svg>
   </a>
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnamanjain2050.github.io%2fpost%2fcode-reusability-and-inheritance%2f&t=Code%20Resuability%20and%20Inheritance" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnamanjain2050.github.io%2fpost%2fcode-reusability-and-inheritance%2f&t=Code%20Reusability%20and%20Inheritance" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
     <svg class="icon">
   <use xlink:href="#facebook"></use>
 </svg>
@@ -160,7 +160,7 @@
 </nav>
     <p>In this article we'll see a story that guides us towards inheritance</p>
 <h2 id="story">Story</h2>
-<p>Let's say we are designing a system in which we have different shapes, namely, <strong>Square</strong>, <strong>Circle</strong>, <strong>Traingle</strong> and <strong>Rectangle</strong>.
+<p>Let's say we are designing a system in which we have different shapes, namely, <strong>Square</strong>, <strong>Circle</strong>, <strong>Triangle</strong> and <strong>Rectangle</strong>.
 We can call two methods on these shapes: <code>rotate()</code> and <code>playSound()</code> and assume that the implementation of these functions in same for different shapes.
 Is the story clear till here?
 <br>
@@ -169,25 +169,25 @@ Is the story clear till here?
 Now generally, such a system can be designed in two ways.</p>
 <h3 id="naive-way">Naive way</h3>
 <p><img src="/images/naive-uml-diagram.png" alt="Naive UML Diagram"></p>
-<p>What's happening here? We've created a seperate class for each of our shape and written the implementation of <code>rotate()</code> and <code>playSound()</code> methods 4 different times. Is it the best way to do things?
+<p>What's happening here? We've created a separate class for each of our shape and written the implementation of <code>rotate()</code> and <code>playSound()</code> methods 4 different times. Is it the best way to do things?
 <br><br>
-We are writing same peice of code 4 times instead what we should do is avoid this duplicacy and <strong>resue our code</strong>. Writing duplicate code is difficult to manage and is waste of time. If say I now want to change the implementation of <code>rotate()</code> function, I will have to change it at 4 places. But if I'm able to write only one implementation of my methods and somehow <em>reuse</em> it for all the shapes, that will be a better and much manageable code.
+We are writing same piece of code 4 times instead what we should do is avoid this duplicity and <strong>reuse our code</strong>. Writing duplicate code is difficult to manage and is waste of time. If say I now want to change the implementation of <code>rotate()</code> function, I will have to change it at 4 places. But if I'm able to write only one implementation of my methods and somehow <em>reuse</em> it for all the shapes, that will be a better and much manageable code.
 Is it clear why doing things the naive way is not the best approach?
 <br>
 <strong>[Checkpoint 2]</strong></p>
 <h3 id="reusing-our-code-using-inheritance">Reusing our Code using Inheritance</h3>
-<p><img src="/images/inherit-1-uml.png" alt="Using inheritance for Code Resuability"></p>
+<p><img src="/images/inherit-1-uml.png" alt="Using inheritance for Code Reusability"></p>
 <p>What's happening here? You probably have guessed till now.
 <br><br>
 To make our code reusable, we are using the concept of <strong>inheritance</strong> in Java. As all 4 classes had the same implementation of <code>rotate()</code> and <code>playSound()</code>, we can say that this was common for all our 4 shapes.
 <br><br>
-What we've done here is introduced a new class <strong>Shape</strong> and moved the common methods to this class. We've <strong>inherited</strong> or <strong>extented</strong> our original 4 classes from this <strong>Shape</strong> class.
+What we've done here is introduced a new class <strong>Shape</strong> and moved the common methods to this class. We've <strong>inherited</strong> or <strong>extended</strong> our original 4 classes from this <strong>Shape</strong> class.
 <br><br>
 Whenever we now call <code>rotate()</code> method from say our <strong>Square</strong> class, it will call class <strong>Shape's</strong> implementation as <strong>Square</strong> is inherited from it.
 <br><br>
-This is <strong>Code Resuability</strong> at it's core. We are able to extract the common methods of our entities ad move them to a seperate class and <strong>inherit</strong> our original entities from this newly created class so that we can resue the methods and avoid code duplicacy.
+This is <strong>Code Reusability</strong> at it's core. We are able to extract the common methods of our entities ad move them to a separate class and <strong>inherit</strong> our original entities from this newly created class so that we can reuse the methods and avoid code duplicity.
 <br><br>
-Are things clear till here? Till here we've shown <em>what</em> we wanted to achieve (Story 1), <em>how</em> we could've done it (Naive way), <em>why</em> it was not the best way (code duplicacy) and <em>how</em> can we improve it (by using inheritance)
+Are things clear till here? Till here we've shown <em>what</em> we wanted to achieve (Story 1), <em>how</em> we could've done it (Naive way), <em>why</em> it was not the best way (code duplicity) and <em>how</em> can we improve it (by using inheritance)
 <br>
 <strong>[Checkpoint 3]</strong></p>
 <h2 id="extending-our-story">Extending our Story</h2>
@@ -204,7 +204,7 @@ What we'll do here is simply provide this new implementation of <code>rotate()</
 <p><img src="/images/inherit-3-uml.png" alt="Overriding rotate() method"></p>
 <p>Here we say that Rhombus is <strong>extending</strong> Shape class, but will have his own implementation of <code>rotate()</code> method. In Java lingo, it's called <strong>method overriding</strong>.
 <br><br>
-It will mean that when <code>rotate()</code> is called on Rhombus, it's own implementation will be called rather than Shape class's implementation as Rhombus has <strong>overriden</strong> the <code>rotate()</code> method.
+It will mean that when <code>rotate()</code> is called on Rhombus, it's own implementation will be called rather than Shape class's implementation as Rhombus has <strong>overridden</strong> the <code>rotate()</code> method.
 <br><br>
 What about when <code>playSound()</code> is called on Rhombus? Implementation for this method is still coming from Shape class only, hence when <code>playSound()</code> is called on Rhombus, the implementation in Shape class will be called exactly as the requirement said.
 <br><br>
@@ -235,11 +235,17 @@ Are things clear in this section? See how simply we were able to add a new shape
     <h2 class="mt-4">Featured Posts</h2>
     <ul>
       <li>
+        <a href="https://namanjain2050.github.io/post/limt-inheritance/" class="nav-link">Can things be avoided from Inherited? - The Final Keyword</a>
+      </li>
+      <li>
         <a href="https://namanjain2050.github.io/post/main-inheritance-concepts/" class="nav-link">Main Inheritance Concepts</a>
       </li>
     </ul>
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
+      <li>
+        <a href="https://namanjain2050.github.io/post/limt-inheritance/" class="nav-link">Can things be avoided from Inherited? - The Final Keyword</a>
+      </li>
       <li>
         <a href="https://namanjain2050.github.io/post/intro-to-inheritance-syntax/" class="nav-link">Introduction to Inheritance Syntax</a>
       </li>
@@ -252,7 +258,7 @@ Are things clear in this section? See how simply we were able to add a new shape
       <nav class="tags_nav">
         <a href='https://namanjain2050.github.io/series/nuances-of-java/' class="post_tag button button_translucent">
           NUANCES-OF-JAVA
-          <span class="button_tally">3</span>
+          <span class="button_tally">4</span>
         </a>
         
         
@@ -263,17 +269,17 @@ Are things clear in this section? See how simply we were able to add a new shape
       <nav class="tags_nav">
         <a href='https://namanjain2050.github.io/tags/beginner/' class="post_tag button button_translucent">
           BEGINNER
-          <span class="button_tally">3</span>
+          <span class="button_tally">4</span>
         </a>
         
         <a href='https://namanjain2050.github.io/tags/java/' class="post_tag button button_translucent">
           JAVA
-          <span class="button_tally">3</span>
+          <span class="button_tally">4</span>
         </a>
         
         <a href='https://namanjain2050.github.io/tags/oops/' class="post_tag button button_translucent">
           OOPS
-          <span class="button_tally">3</span>
+          <span class="button_tally">4</span>
         </a>
         
         

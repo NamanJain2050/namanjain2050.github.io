@@ -6,9 +6,18 @@
     <description>Recent content in beginner on naman&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 21 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://namanjain2050.github.io/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://namanjain2050.github.io/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Code Resuability and Inheritance</title>
+      <title>Can things be avoided from Inherited? - The Final Keyword</title>
+      <link>https://namanjain2050.github.io/post/limt-inheritance/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://namanjain2050.github.io/post/limt-inheritance/</guid>
+      <description>&lt;p&gt;We&#39;ve seen multiple examples of how to inherit properties from parent class to the child classes using &lt;code&gt;extends&lt;/code&gt; keyword. We&#39;ve also seen examples of method overriding and why we need it. Now few questions come to mind: Is there a way to prevent classes from getting extended, is there a way to protect methods from getting overridden and why will someone ever need to do such a thing. Let&#39;s dive deep.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Code Reusability and Inheritance</title>
       <link>https://namanjain2050.github.io/post/code-reusability-and-inheritance/</link>
       <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
       
@@ -31,7 +40,7 @@
       <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://namanjain2050.github.io/post/main-inheritance-concepts/</guid>
-      <description>&lt;p&gt;We saw why one might use inheritance &lt;a href=&#34;https://namanjain2050.github.io/post/code-reusability-and-inheritance&#34;&gt;here&lt;/a&gt;. In this post we&#39;ll build on that knowledge and see more concpets relating to inheritance.&lt;/p&gt;</description>
+      <description>&lt;p&gt;We saw why one might use inheritance &lt;a href=&#34;https://namanjain2050.github.io/post/code-reusability-and-inheritance&#34;&gt;here&lt;/a&gt;. In this post we&#39;ll build on that knowledge and see more concepts relating to inheritance.&lt;/p&gt;</description>
     </item>
     
   </channel>

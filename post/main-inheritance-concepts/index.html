@@ -11,13 +11,13 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="We saw why one might use inheritance here. In this post we&#39;ll build on that knowledge and see more concpets relating to inheritance.">
+<meta name="description" content="We saw why one might use inheritance here. In this post we&#39;ll build on that knowledge and see more concepts relating to inheritance.">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
 <meta name="twitter:title" content="Main Inheritance Concepts" />
 <meta property="og:url" content="https://namanjain2050.github.io/post/main-inheritance-concepts/" />
 <meta property="og:title" content="Main Inheritance Concepts" />
-<meta property="og:description" content="We saw why one might use inheritance here. In this post we&#39;ll build on that knowledge and see more concpets relating to inheritance." />
+<meta property="og:description" content="We saw why one might use inheritance here. In this post we&#39;ll build on that knowledge and see more concepts relating to inheritance." />
 <meta property="og:image" content="https://namanjain2050.github.io/images/big-example-inheritance-1.png" />
 <link rel="apple-touch-icon" sizes="180x180" href='https://namanjain2050.github.io/icons/apple-touch-icon.png'>
 <link rel="icon" type="image/png" sizes="32x32" href='https://namanjain2050.github.io/icons/favicon-32x32.png'>
@@ -148,7 +148,7 @@
       <ul>
         <li><a href="#single-inheritance">Single Inheritance</a></li>
         <li><a href="#multilevel-inheritance">Multilevel Inheritance</a></li>
-        <li><a href="#hierarichal-inheritance">Hierarichal Inheritance</a></li>
+        <li><a href="#hierarchical-inheritance">Hierarchical Inheritance</a></li>
         <li><a href="#multiple-inheritance">Multiple Inheritance?</a></li>
       </ul>
     </li>
@@ -158,7 +158,7 @@
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ul>
 </nav>
-    <p>We saw why one might use inheritance <a href="/post/code-reusability-and-inheritance">here</a>. In this post we'll build on that knowledge and see more concpets relating to inheritance.</p>
+    <p>We saw why one might use inheritance <a href="/post/code-reusability-and-inheritance">here</a>. In this post we'll build on that knowledge and see more concepts relating to inheritance.</p>
 <h2 id="superclass-subclass">Superclass, Subclass</h2>
 <p>I want to introduce two important terms used frequently when talking about inheritance: <code>superclass</code> and <code>subclass</code>. <br>
 <strong>Simply put if a class B extends class A than class B is subclass of class A and class A is superclass of class B.</strong> Sometimes the superclass is also called <code>the parent</code> and subclass is called <code>the child</code>. See the following figure which is self-explanatory:</p>
@@ -177,8 +177,8 @@ Now class C extends class B so class B is <strong>superclass</strong> of class C
 <h3 id="multilevel-inheritance">Multilevel Inheritance</h3>
 <p><img src="/images/multilevel-inheritance.png" alt="Multilevel Inheritance"></p>
 <p>We saw this example is the above section as well. This kind of inheritance is called multilevel inheritance.</p>
-<h3 id="hierarichal-inheritance">Hierarichal Inheritance</h3>
-<p><img src="/images/hierarichal-inheritance.png" alt="Hierarichal Inheritance"></p>
+<h3 id="hierarchical-inheritance">Hierarchical Inheritance</h3>
+<p><img src="/images/hierarichal-inheritance.png" alt="Hierarchical Inheritance"></p>
 <h3 id="multiple-inheritance">Multiple Inheritance?</h3>
 <p><img src="/images/multiple-inheritance.png" alt="Multiple Inheritance"></p>
 <p>In multiple inheritance, one class extends two or more class. Did ya notice the <em>question mark</em> symbol in the heading? Why did I put it there. Let's look at the code of multiple inheritance to find some answers.</p>
@@ -316,7 +316,7 @@ Notice that class A and class B both have an implementation of a method named <c
 <span class="ln">25</span>FourWheeler&#39;s drive()</code></pre></div></p>
 <p>Focus on the following part of the inheritance and notice the relevant output.</p>
 <p><img src="/images/big-example-inheritance-2.png" alt="Inheritance tree"></p>
-<p>When we call a method on Sedan, <strong>most specific version</strong>, i.e., version which is lowest in the inheritcance tree is called.</p>
+<p>When we call a method on Sedan, <strong>most specific version</strong>, i.e., version which is lowest in the inheritance tree is called.</p>
 <h2 id="takeaways">Takeaways</h2>
 <ul>
 <li>Superclass/subclass terminology</li>
@@ -343,13 +343,19 @@ Notice that class A and class B both have an implementation of a method named <c
     <h2 class="mt-4">Featured Posts</h2>
     <ul>
       <li>
-        <a href="https://namanjain2050.github.io/post/code-reusability-and-inheritance/" class="nav-link">Code Resuability and Inheritance</a>
+        <a href="https://namanjain2050.github.io/post/limt-inheritance/" class="nav-link">Can things be avoided from Inherited? - The Final Keyword</a>
+      </li>
+      <li>
+        <a href="https://namanjain2050.github.io/post/code-reusability-and-inheritance/" class="nav-link">Code Reusability and Inheritance</a>
       </li>
     </ul>
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://namanjain2050.github.io/post/code-reusability-and-inheritance/" class="nav-link">Code Resuability and Inheritance</a>
+        <a href="https://namanjain2050.github.io/post/limt-inheritance/" class="nav-link">Can things be avoided from Inherited? - The Final Keyword</a>
+      </li>
+      <li>
+        <a href="https://namanjain2050.github.io/post/code-reusability-and-inheritance/" class="nav-link">Code Reusability and Inheritance</a>
       </li>
       <li>
         <a href="https://namanjain2050.github.io/post/intro-to-inheritance-syntax/" class="nav-link">Introduction to Inheritance Syntax</a>
@@ -360,7 +366,7 @@ Notice that class A and class B both have an implementation of a method named <c
       <nav class="tags_nav">
         <a href='https://namanjain2050.github.io/series/nuances-of-java/' class="post_tag button button_translucent">
           NUANCES-OF-JAVA
-          <span class="button_tally">3</span>
+          <span class="button_tally">4</span>
         </a>
         
         
@@ -371,17 +377,17 @@ Notice that class A and class B both have an implementation of a method named <c
       <nav class="tags_nav">
         <a href='https://namanjain2050.github.io/tags/beginner/' class="post_tag button button_translucent">
           BEGINNER
-          <span class="button_tally">3</span>
+          <span class="button_tally">4</span>
         </a>
         
         <a href='https://namanjain2050.github.io/tags/java/' class="post_tag button button_translucent">
           JAVA
-          <span class="button_tally">3</span>
+          <span class="button_tally">4</span>
         </a>
         
         <a href='https://namanjain2050.github.io/tags/oops/' class="post_tag button button_translucent">
           OOPS
-          <span class="button_tally">3</span>
+          <span class="button_tally">4</span>
         </a>
         
         
