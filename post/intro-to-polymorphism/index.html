@@ -2,22 +2,23 @@
 <!DOCTYPE html>
 <html lang="en" data-figures="" class="page" data-mode="lit">
   <head>
-<title>naman&#39;s blog</title>
+<title>An Introduction to Polymorphism | naman&#39;s blog</title>
 <meta charset="utf-8">
 <meta name="generator" content="Hugo 0.79.0" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="">
+<meta name="description" content="Polymorphism (from Greek) means one shape many forms. In programming, it means to allow single symbol to perform different types of actions. It can also mean to …">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="" />
-<meta property="og:url" content="https://namanjain2050.github.io/archives/" />
-<meta property="og:title" content="" />
-<meta property="og:description" content="" />
-<meta property="og:image" content="https://namanjain2050.github.io/images/thumbnail.png" />
+<meta name="twitter:title" content="An Introduction to Polymorphism" />
+<meta property="og:url" content="https://namanjain2050.github.io/post/intro-to-polymorphism/" />
+<meta property="og:title" content="An Introduction to Polymorphism" />
+<meta property="og:description" content="Polymorphism (from Greek) means one shape many forms. In programming, it means to allow single symbol to perform different types of actions. It can also mean to …" />
+<meta property="og:image" content="https://namanjain2050.github.io/images/the-final-keyword.png" />
 <link rel="apple-touch-icon" sizes="180x180" href='https://namanjain2050.github.io/icons/apple-touch-icon.png'>
 <link rel="icon" type="image/png" sizes="32x32" href='https://namanjain2050.github.io/icons/favicon-32x32.png'>
 <link rel="manifest" href='https://namanjain2050.github.io/icons/site.webmanifest'>
@@ -25,7 +26,7 @@
 <meta name="msapplication-TileColor" content="#002538">
 <meta name="theme-color" content="#002538">
 
-<link rel="canonical" href="https://namanjain2050.github.io/archives/">
+<link rel="canonical" href="https://namanjain2050.github.io/post/intro-to-polymorphism/">
 
     
 
@@ -98,23 +99,29 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title"></h1><div class="post_meta">
+    <h1 class="post_title">An Introduction to Polymorphism</h1><div class="post_meta">
   <svg class="icon">
   <use xlink:href="#calendar"></use>
 </svg>
   <span class="post_date">
-    May 28, 2019</span>
+    Dec 25, 2020</span>
+    <a href='https://namanjain2050.github.io/tags/java' class="post_tag button button_translucent">java
+    </a>
+    <a href='https://namanjain2050.github.io/tags/beginner' class="post_tag button button_translucent">beginner
+    </a>
+    <a href='https://namanjain2050.github.io/tags/oops' class="post_tag button button_translucent">oops
+    </a>
 </div>
 
     
 <div class="post_share">
   Share on:
-  <a href="https://twitter.com/intent/tweet?text=&url=https%3a%2f%2fnamanjain2050.github.io%2farchives%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+  <a href="https://twitter.com/intent/tweet?text=An%20Introduction%20to%20Polymorphism&url=https%3a%2f%2fnamanjain2050.github.io%2fpost%2fintro-to-polymorphism%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
     <svg class="icon">
   <use xlink:href="#twitter"></use>
 </svg>
   </a>
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnamanjain2050.github.io%2farchives%2f&t=" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnamanjain2050.github.io%2fpost%2fintro-to-polymorphism%2f&t=An%20Introduction%20to%20Polymorphism" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
     <svg class="icon">
   <use xlink:href="#facebook"></use>
 </svg>
@@ -124,7 +131,7 @@
   <use xlink:href="#linkedin"></use>
 </svg>
   </a>
-  <a href="https://namanjain2050.github.io/archives/" title="Copy Link" class="link link_yank">
+  <a href="https://namanjain2050.github.io/post/intro-to-polymorphism/" title="Copy Link" class="link link_yank">
     <svg class="icon">
   <use xlink:href="#copy"></use>
 </svg>
@@ -133,6 +140,70 @@
 
     
     
+    <h2>Overview</h2>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#a-basic-example">A basic example</a></li>
+    <li><a href="#different-types-of-polymorphism">Different types of Polymorphism</a>
+      <ul>
+        <li><a href="#ad-hoc-polymorphism--function-overloading--static-polymorphism">Ad-hoc Polymorphism / Function Overloading / Static Polymorphism</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    <p>Polymorphism (from Greek) means one shape many forms. In programming, it means to allow single symbol to perform different types of actions. It can also mean to provide single interface for entities of different types.</p>
+<h2 id="a-basic-example">A basic example</h2>
+<p>Consider the following two lines of code:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>2 + 3;
+<span class="ln">2</span>&#34;hello&#34; + &#34;world&#34;;
+</code></pre></div><p>First line will <strong>add</strong> the two operands and produce the <strong>sum</strong> as the result. The second line will <strong>concatenate</strong> the two operands and produce the <strong>concatenated</strong> string as the result.
+<br><br>
+Same operator <code>+</code> is used but has different meaning and operation which depends on the type of operands used. This is the essence of polymorphism which means to allow single symbol to perform different actions based on the type in question.</p>
+<h2 id="different-types-of-polymorphism">Different types of Polymorphism</h2>
+<h3 id="ad-hoc-polymorphism--function-overloading--static-polymorphism">Ad-hoc Polymorphism / Function Overloading / Static Polymorphism</h3>
+<p>To put it in very simple terms, function overloading means two or more functions <strong>having same name but different argument list</strong>. It falls under the category of Ad-hoc polymorphism.
+<br><br>
+Consider the following scenario: I want to create a function which accepts two integers and returns an integer which is the sum of the arguments. Say I've written the following function:
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="ln">1</span><span class="kt">int</span> <span class="nf">addIntegers</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
+<span class="ln">2</span>
+<span class="ln">3</span>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">;</span>
+<span class="ln">4</span><span class="o">}</span></code></pre></div>
+Now say I want to add two <code>float</code> values this time. Can I use the above created function? No, because it will only accept integer values. So I'll go and create a new function say like this:
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="ln">1</span><span class="kt">int</span> <span class="nf">addIntegers</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
+<span class="ln">2</span>
+<span class="ln">3</span>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">;</span>
+<span class="ln">4</span><span class="o">}</span>
+<span class="ln">5</span><span class="kt">double</span> <span class="nf">addFloats</span><span class="o">(</span><span class="kt">float</span> <span class="n">a</span><span class="o">,</span> <span class="kt">float</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
+<span class="ln">6</span>
+<span class="ln">7</span>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">;</span>
+<span class="ln">8</span><span class="o">}</span></code></pre></div>
+Cool. Now say I want to add an <code>int</code> and a <code>double</code> value. The above two functions will not work for me so I'll go ahead and add a new function <code>addIntegerDouble()</code>. What about if I want to add an <code>double</code> and an <code>int</code> this time (changed the order). I will probably need to add another function with the name <code>addDoubleInteger()</code>.
+<br><br>
+Can you see how a simple problem has become so complicated. Now I have in my system all these functions with different names which I have to remember (or refer back to documentation again and again) which are essentially doing the same thing: adding two numbers. They just differ in the type of arguments to be passed.
+<br><br>
+There's a better way to do this. Instead of giving each function a different name, which is essentially doing the same thing, we can simply give all these functions the same name: <code>add()</code>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="ln"> 1</span><span class="kt">int</span> <span class="nf">add</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
+<span class="ln"> 2</span>    <span class="kt">int</span> <span class="nf">add</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
+<span class="ln"> 3</span>
+<span class="ln"> 4</span>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">;</span>
+<span class="ln"> 5</span><span class="o">}</span>
+<span class="ln"> 6</span><span class="kt">float</span> <span class="nf">add</span><span class="o">(</span><span class="kt">float</span> <span class="n">a</span><span class="o">,</span> <span class="kt">float</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
+<span class="ln"> 7</span>
+<span class="ln"> 8</span>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">;</span>
+<span class="ln"> 9</span><span class="o">}</span>
+<span class="ln">10</span><span class="kt">double</span> <span class="nf">add</span><span class="o">(</span><span class="kt">double</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
+<span class="ln">11</span>
+<span class="ln">12</span>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">;</span>
+<span class="ln">13</span><span class="o">}</span>
+<span class="ln">14</span><span class="kt">double</span> <span class="nf">add</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="kt">double</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
+<span class="ln">15</span>
+<span class="ln">16</span>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">;</span>
+<span class="ln">17</span><span class="o">}</span></code></pre></div>
+This is the essence of method overloading! My language allows me to declare functions with same names and only differ in argument list and/or return type. Method overloading will reduce so much complexity because I won't have to remember all the different function names which are essentially doing the same thing. Now if I write something like:
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="ln">1</span><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="n">4</span><span class="o">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">9</span><span class="o">;</span>
+<span class="ln">2</span><span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="n">add</span><span class="o">(</span><span class="n">a</span><span class="o">,</span> <span class="n">b</span><span class="o">);</span></code></pre></div>
+Compiler will know which variant of <code>add()</code> to call based on the type of arguments passed. As this decision is made by compiler at compile time, this kind of polymorphism is also referred to as <strong>Static Polymorphism</strong> or <strong>Compile-time polymorphism</strong></p>
+
     
       
     
@@ -158,9 +229,6 @@
     </ul>
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
-      <li>
-        <a href="https://namanjain2050.github.io/post/intro-to-polymorphism/" class="nav-link">An Introduction to Polymorphism</a>
-      </li>
       <li>
         <a href="https://namanjain2050.github.io/post/limt-inheritance/" class="nav-link">Can things be avoided from getting Inherited? - The &#39;final&#39; Keyword</a>
       </li>

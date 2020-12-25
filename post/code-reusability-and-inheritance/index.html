@@ -11,13 +11,13 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="In this article we&#39;ll see a story that guides us towards inheritance">
+<meta name="description" content="Why do we need code reusability. What benefits do code reusability offers. Can we achieve code reusability by using inheritance. How to do method overriding. …">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
 <meta name="twitter:title" content="Code Reusability and Inheritance" />
 <meta property="og:url" content="https://namanjain2050.github.io/post/code-reusability-and-inheritance/" />
 <meta property="og:title" content="Code Reusability and Inheritance" />
-<meta property="og:description" content="In this article we&#39;ll see a story that guides us towards inheritance" />
+<meta property="og:description" content="Why do we need code reusability. What benefits do code reusability offers. Can we achieve code reusability by using inheritance. How to do method overriding. …" />
 <meta property="og:image" content="https://namanjain2050.github.io/images/inherit-3-uml.png" />
 <link rel="apple-touch-icon" sizes="180x180" href='https://namanjain2050.github.io/icons/apple-touch-icon.png'>
 <link rel="icon" type="image/png" sizes="32x32" href='https://namanjain2050.github.io/icons/favicon-32x32.png'>
@@ -158,7 +158,7 @@
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ul>
 </nav>
-    <p>In this article we'll see a story that guides us towards inheritance</p>
+    <p>In this article we'll see a story that guides us towards inheritance. We'll look at different use cases and look at UML diagrams for those use cases to understand the proposed solutions. Let's dive deep</p>
 <h2 id="story">Story</h2>
 <p>Let's say we are designing a system in which we have different shapes, namely, <strong>Square</strong>, <strong>Circle</strong>, <strong>Triangle</strong> and <strong>Rectangle</strong>.
 We can call two methods on these shapes: <code>rotate()</code> and <code>playSound()</code> and assume that the implementation of these functions in same for different shapes.
@@ -199,7 +199,7 @@ Is this new requirement clear?
 <h3 id="method-overriding">Method overriding</h3>
 <p><img src="/images/inherit-2-uml.png" alt="Adding a new Shape to our Design"></p>
 <p>Adding a new Shape to our design is that easy! All we have to do is create a new class with the name Rhombus and <strong>extend</strong> it from our Shape class created earlier. But is it enough for our new requirement? <br>
-No. Our requirement said that this Rhombus class will have it's own implementation of <code>rotate()</code> method which is different that the previous one. <br>
+No. Our requirement said that this Rhombus class will have it's own implementation of <code>rotate()</code> method which is different from the previous one. <br>
 What we'll do here is simply provide this new implementation of <code>rotate()</code> method in <strong>Rhombus</strong> class, it's that easy.</p>
 <p><img src="/images/inherit-3-uml.png" alt="Overriding rotate() method"></p>
 <p>Here we say that Rhombus is <strong>extending</strong> Shape class, but will have his own implementation of <code>rotate()</code> method. In Java lingo, it's called <strong>method overriding</strong>.
@@ -244,6 +244,9 @@ Are things clear in this section? See how simply we were able to add a new shape
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://namanjain2050.github.io/post/intro-to-polymorphism/" class="nav-link">An Introduction to Polymorphism</a>
+      </li>
+      <li>
         <a href="https://namanjain2050.github.io/post/limt-inheritance/" class="nav-link">Can things be avoided from getting Inherited? - The &#39;final&#39; Keyword</a>
       </li>
       <li>
@@ -258,7 +261,7 @@ Are things clear in this section? See how simply we were able to add a new shape
       <nav class="tags_nav">
         <a href='https://namanjain2050.github.io/series/nuances-of-java/' class="post_tag button button_translucent">
           NUANCES-OF-JAVA
-          <span class="button_tally">4</span>
+          <span class="button_tally">5</span>
         </a>
         
         
@@ -269,17 +272,17 @@ Are things clear in this section? See how simply we were able to add a new shape
       <nav class="tags_nav">
         <a href='https://namanjain2050.github.io/tags/beginner/' class="post_tag button button_translucent">
           BEGINNER
-          <span class="button_tally">4</span>
+          <span class="button_tally">5</span>
         </a>
         
         <a href='https://namanjain2050.github.io/tags/java/' class="post_tag button button_translucent">
           JAVA
-          <span class="button_tally">4</span>
+          <span class="button_tally">5</span>
         </a>
         
         <a href='https://namanjain2050.github.io/tags/oops/' class="post_tag button button_translucent">
           OOPS
-          <span class="button_tally">4</span>
+          <span class="button_tally">5</span>
         </a>
         
         
