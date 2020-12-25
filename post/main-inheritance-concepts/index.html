@@ -168,17 +168,18 @@
 <p>As the image is self-explanatory, class B extends class A so class A is superclass of class B and class B is subclass of class A. <br>
 Now class C extends class B so class B is <strong>superclass</strong> of class C and class C is subclass of class B. Notice how class B is both subclass and superclass depending on in respect to which class we are talking.
 <br><br>
-<strong>Important Note</strong>: Inheritance can be looked at like transitive property in maths. If class B is subclass of class A and class C is subclass of class A, it automatically makes class C a subclass of class A</p>
+<strong>Important Note</strong>: Inheritance can be looked at like transitive property in maths. If class B is subclass of class A and class C is subclass of class B, it automatically makes class C a subclass of class A</p>
 <h2 id="types-of-inheritance">Types of Inheritance</h2>
 <p>We can inherit classes in different ways to create different types of inheritance.</p>
 <h3 id="single-inheritance">Single Inheritance</h3>
-<p><img src="/images/single-inheritance.png" alt="Single Inheritance"></p>
-<p>Most basic type of inheritance. Class B extends Class A. Class B is subclass of Class A and Class A is superclass of Class B.</p>
+<p><img src="/images/single-inheritance.png" alt="Single Inheritance">
+Most basic type of inheritance. Class B extends Class A. Class B is subclass of Class A and Class A is superclass of Class B.</p>
 <h3 id="multilevel-inheritance">Multilevel Inheritance</h3>
-<p><img src="/images/multilevel-inheritance.png" alt="Multilevel Inheritance"></p>
-<p>We saw this example is the above section as well. This kind of inheritance is called multilevel inheritance.</p>
+<p><img src="/images/multilevel-inheritance.png" alt="Multilevel Inheritance">
+We saw this example is the above section as well. This kind of inheritance is called multilevel inheritance.</p>
 <h3 id="hierarchical-inheritance">Hierarchical Inheritance</h3>
-<p><img src="/images/hierarichal-inheritance.png" alt="Hierarchical Inheritance"></p>
+<p><img src="/images/hierarichal-inheritance.png" alt="Hierarchical Inheritance">
+When one class is extended by more than one subclasses, we call that <strong>Hierarchical Inheritance</strong></p>
 <h3 id="multiple-inheritance">Multiple Inheritance?</h3>
 <p><img src="/images/multiple-inheritance.png" alt="Multiple Inheritance"></p>
 <p>In multiple inheritance, one class extends two or more class. Did ya notice the <em>question mark</em> symbol in the heading? Why did I put it there. Let's look at the code of multiple inheritance to find some answers.</p>
@@ -243,7 +244,7 @@ Notice that class A and class B both have an implementation of a method named <c
 <span class="ln">8</span><span class="o">}</span></code></pre></div>
 <p>Output:
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln">1</span>5</code></pre></div></p>
-<p>You see in the above program we class B extends class A and we are able to access 'a' instance variable using class B. This is because instance variables are also inherited. (You would've noticed that I used public identifiers to define instance variables in class A. I'll dive deep into other access modifiers in some later post)</p>
+<p>You see in the above program class B extends class A and we are able to access 'a' instance variable using class B. This is because instance variables are also inherited. (You would've noticed that I used public identifiers to define instance variables in class A. I'll dive deep into other access modifiers in some later post)</p>
 <h2 id="a-more-sophisticated-example">A more Sophisticated Example</h2>
 <p><img src="/images/big-example-inheritance-1.png" alt="New design requirement"></p>
 <p>We'll code each and every class according to the UML diagram. Full code can be downloaded from <a href="/files/main-inheritance-1.zip">here</a>. I'll only show the helper class in this blog.</p>
