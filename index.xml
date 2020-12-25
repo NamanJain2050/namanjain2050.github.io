@@ -6,7 +6,18 @@
     <description>Recent content on naman&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 24 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://namanjain2050.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://namanjain2050.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An Introduction to Polymorphism</title>
+      <link>https://namanjain2050.github.io/post/intro-to-polymorphism/</link>
+      <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://namanjain2050.github.io/post/intro-to-polymorphism/</guid>
+      <description>Polymorphism (from Greek) means one shape many forms. In programming, it means to allow single symbol to perform different types of actions. It can also mean to provide single interface for entities of different types.
+A basic example Consider the following two lines of code:
+12 + 3; 2&amp;#34;hello&amp;#34; + &amp;#34;world&amp;#34;; First line will add the two operands and produce the sum as the result. The second line will concatenate the two operands and produce the concatenated string as the result.</description>
+    </item>
+    
     <item>
       <title>Can things be avoided from getting Inherited? - The &#39;final&#39; Keyword</title>
       <link>https://namanjain2050.github.io/post/limt-inheritance/</link>
