@@ -42,7 +42,7 @@ A basic example Consider the following two lines of code:
       <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://namanjain2050.github.io/post/intro-to-inheritance-syntax/</guid>
-      <description>&lt;p&gt;In this post we&#39;ll cover very basic syntax for inheritance in Java. We&#39;ll use examples mentioned &lt;a href=&#34;https://namanjain2050.github.io/post/code-reusability-and-inheritance&#34;&gt;here&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;In this post we&#39;ll cover very basic syntax for inheritance in Java. We&#39;ll use examples mentioned &lt;a href=&#34;https://namanjain2050.github.io/post/code-reusability-and-inheritance&#34;&gt;here&lt;/a&gt;. We&#39;ll also look at different UML diagrams and try to convert those diagrams to actual classes using Java syntax.&lt;/p&gt;</description>
     </item>
     
     <item>
