@@ -11,14 +11,14 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="We&#39;ve seen multiple examples of how to inherit properties from parent class to the child classes using extends keyword. We&#39;ve also seen examples of method …">
+<meta name="description" content="How to use final keyword to prevent classes fro getting extended. The final keyword. Use of final keywords to prevent method overriding. Use of final keyword to …">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
 <meta name="twitter:title" content="Can things be avoided from getting Inherited? - The &#39;final&#39; Keyword" />
 <meta property="og:url" content="https://namanjain2050.github.io/post/limt-inheritance/" />
 <meta property="og:title" content="Can things be avoided from getting Inherited? - The &#39;final&#39; Keyword" />
-<meta property="og:description" content="We&#39;ve seen multiple examples of how to inherit properties from parent class to the child classes using extends keyword. We&#39;ve also seen examples of method …" />
-<meta property="og:image" content="https://namanjain2050.github.io/images/the-final-keyword.png" />
+<meta property="og:description" content="How to use final keyword to prevent classes fro getting extended. The final keyword. Use of final keywords to prevent method overriding. Use of final keyword to …" />
+<meta property="og:image" content="https://namanjain2050.github.io/images/final-v-s-immutable.png" />
 <link rel="apple-touch-icon" sizes="180x180" href='https://namanjain2050.github.io/icons/apple-touch-icon.png'>
 <link rel="icon" type="image/png" sizes="32x32" href='https://namanjain2050.github.io/icons/favicon-32x32.png'>
 <link rel="manifest" href='https://namanjain2050.github.io/icons/site.webmanifest'>
@@ -174,7 +174,7 @@ Compiling above classes will give us the following error:
 <span class="ln">2</span>class B extends A {
 <span class="ln">3</span>                ^
 <span class="ln">4</span>1 error</code></pre></div></p>
-<p>The compiler error clearly states that we cannot extend a class marked by <code>final</code> keyword. The use of <code>final</code> keyword solves our purpose.s</p>
+<p>The compiler error clearly states that we cannot extend a class marked by <code>final</code> keyword. The use of <code>final</code> keyword solves our purpose.</p>
 <h2 id="exploring-the-final-keyword">Exploring the final keyword</h2>
 <p>We've seen in the last section, the use of <code>final</code> keyword at class level. It stops any class from getting extended further. Let's see other uses of this <code>final</code> keyword.</p>
 <h3 id="to-stop-method-overriding">To stop method overriding</h3>
@@ -203,7 +203,7 @@ The compiler clearly states that we cannot override a method marked by final key
 <br>
 A non-final class can contain final methods. It will mean that the class can be extended but some methods, which were marked by final, cannot be overridden by any subclass. (as shown in our second example)</p>
 <h3 id="to-create-constants">To create constants</h3>
-<p>We can create constants in Java by marking our variables with <code>final</code> keyword. By marking variables with <code>final</code> ensures that the value of this variable will not change throughout the course of the program.
+<p>We can create constants in Java by marking our variables with <code>final</code> keyword. By marking variables with <code>final</code> we ensure that the value of this variable will not change throughout the course of the program.
 <div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="ln">1</span><span class="kd">class</span> <span class="nc">HelperClass</span> <span class="o">{</span>
 <span class="ln">2</span>
 <span class="ln">3</span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
@@ -221,6 +221,10 @@ Output:
 <p>As we can see, our compiler error clearly states that we cannot change the value of a variable marked by final. Therefore, <code>final</code> keyword ensures that 'a' will remain same throughout the course of the program.</p>
 <h3 id="what-about-reference-variables">What about reference variables?</h3>
 <p>Yes, we can mark reference variables with final keyword as well. Let's see what happens in this case
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="ln">1</span><span class="kd">class</span> <span class="nc">A</span> <span class="o">{</span>
+<span class="ln">2</span>
+<span class="ln">3</span>    <span class="kd">public</span> <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="n">5</span><span class="o">;</span>
+<span class="ln">4</span><span class="o">}</span></code></pre></div>
 <div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="ln">1</span><span class="kd">class</span> <span class="nc">HelperClass</span> <span class="o">{</span>
 <span class="ln">2</span>
 <span class="ln">3</span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
@@ -230,16 +234,12 @@ Output:
 <span class="ln">7</span>        <span class="n">a1</span> <span class="o">=</span> <span class="n">a2</span><span class="o">;</span>
 <span class="ln">8</span>    <span class="o">}</span>
 <span class="ln">9</span><span class="o">}</span></code></pre></div>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="ln">1</span><span class="kd">class</span> <span class="nc">A</span> <span class="o">{</span>
-<span class="ln">2</span>
-<span class="ln">3</span>    <span class="kd">public</span> <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="n">5</span><span class="o">;</span>
-<span class="ln">4</span><span class="o">}</span></code></pre></div>
 Output:
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln">1</span>HelperClass.java:7: error: cannot assign a value to final variable a1
 <span class="ln">2</span>        a1 = a2;
 <span class="ln">3</span>        ^
 <span class="ln">4</span>1 error</code></pre></div>
-Yet again, our compiler error message is clear enough stating that once a reference variable is created, we cannot refer it to something else. Notice the last statement: <strong>Once a reference variable is created, we cannot <em>refer</em> it to something else</strong>. If we change our HelperClass.java to the following:
+Yet again, our compiler error message is clear enough stating that once a reference variable is marked final, we cannot change what it refers to i.e. it cannot refer to something else. Notice the last statement: <strong>Once a reference variable is marked final, it cannot <em>refer</em> to something else</strong>. If we change our HelperClass.java to the following:
 <div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="ln"> 1</span><span class="kd">class</span> <span class="nc">HelperClass</span> <span class="o">{</span>
 <span class="ln"> 2</span>
 <span class="ln"> 3</span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
@@ -254,9 +254,9 @@ Yet again, our compiler error message is clear enough stating that once a refere
 Want to take a guess what will happen? Here's the output:
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln">1</span>a1&#39;a value: 5
 <span class="ln">2</span>a1&#39;a value now: 10</code></pre></div>
-Let's take a minute to digest what has happened here. Once a reference variable is created we cannot refer it to something else, we've already established this much. But using by using a final reference variable, we are able to change the internal state of the object because by doing so we are not exactly &quot;changing the value of our reference variable&quot;. The value of our reference variable is still the same, it still contains the bits to reach our object in heap.
+Let's take a minute to digest what has happened here. Once a reference variable is marked final we cannot refer it to something else, we've already established this much. But by using a final reference variable, we are able to change the internal state of the object because by doing so we are not exactly &quot;changing the value of our reference variable&quot;. The value of our reference variable is still the same, it still contains the bits to reach our object in heap.
 <br><br>
-Marking <code>a1</code> as <code>final</code> only tells the compiler that the value of <code>a1</code> will not change throughout the course of our program. As <code>a1</code> is a reference variable, it means that <code>a1</code> will not point to something else. But the <code>final</code> keyword doesn't say we that cannot change the internal state of the object <code>a1</code> is referring to. Hence the above program is completely legit.
+Marking <code>a1</code> as <code>final</code> only tells the compiler that the value of <code>a1</code> will not change throughout the course of our program. As <code>a1</code> is a reference variable, it means that <code>a1</code> will not point to something else. But the <code>final</code> keyword doesn't say that we cannot change the internal state of the object <code>a1</code> is referring to. Hence the above program is completely legit.
 <br><br>
 Similar logic will apply to arrays declared as <code>final</code>. As arrays are treated like objects in Java once an array is marked as <code>final</code>, that particular variable cannot point to a different array object. But we still can change the values of our array. Here's an example:
 <div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="ln">1</span><span class="kd">class</span> <span class="nc">HelperClass</span> <span class="o">{</span>
@@ -307,11 +307,14 @@ I hope the behavior of <code>final</code> keyword on reference variables in now 
 <span class="ln">2</span><span class="n">str</span><span class="o">[</span><span class="n">4</span><span class="o">]</span> <span class="o">=</span> <span class="sc">&#39;I&#39;</span><span class="o">;</span>       <span class="cm">/*illegal*/</span></code></pre></div>
 This is because String class is Immutable. We cannot change the &quot;internal state&quot; of String's objects.
 <br><br>
-This is different from <code>final</code>. Following code is legit because str was not created as a final variable and we can change what str points to.
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="ln">1</span><span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">&#34;Immutable String&#34;</span><span class="o">;</span>
-<span class="ln">2</span><span class="n">str</span><span class="o">[</span><span class="n">4</span><span class="o">]</span> <span class="o">=</span> <span class="sc">&#39;I&#39;</span><span class="o">;</span>       <span class="cm">/*illegal*/</span>  
-<span class="ln">3</span><span class="n">String</span> <span class="n">str2</span> <span class="o">=</span> <span class="s">&#34;Another String&#34;</span><span class="o">;</span>
-<span class="ln">4</span><span class="n">str</span> <span class="o">=</span> <span class="n">str2</span><span class="o">;</span>         <span class="cm">/*This is legal because str was not final*/</span></code></pre></div>
+This is different from <code>final</code>. Marking variable <code>final</code> tells the compiler that we cannot change the value of that particular variable.
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="ln">1</span><span class="kd">final</span> <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="n">4</span><span class="o">;</span>
+<span class="ln">2</span><span class="n">a</span> <span class="o">=</span> <span class="n">5</span><span class="o">;</span>      <span class="cm">/*Illegal*/</span>
+<span class="ln">3</span><span class="kd">final</span> <span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">&#34;Immutable String&#34;</span><span class="o">;</span>
+<span class="ln">4</span><span class="n">String</span> <span class="n">str2</span> <span class="o">=</span> <span class="s">&#34;Another String&#34;</span><span class="o">;</span>
+<span class="ln">5</span><span class="n">str</span> <span class="o">=</span> <span class="n">str2</span><span class="o">;</span>         <span class="cm">/*Illegal*/</span></code></pre></div></p>
+<p>But using final keyword we can change the internal state of a mutable object (example shown above). And similarly cannot change the internal state of immutable object even with a non-final variable (string example)
+<br>
 Here's a pictorial explanation:
 <img src="/images/final-v-s-immutable.png" alt="Final v/s Immutable"></p>
 <p>I hope this fine distinction between 'final' and 'Immutability' is clear by now.</p>
