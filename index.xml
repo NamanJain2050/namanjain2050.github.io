@@ -6,7 +6,16 @@
     <description>Recent content on naman&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 28 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://namanjain2050.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://namanjain2050.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The &#34;abstract&#34; keyword - Abstract classes &amp; Methods</title>
+      <link>https://namanjain2050.github.io/post/abstract/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://namanjain2050.github.io/post/abstract/</guid>
+      <description>Introduction Consider the following class design: We can notice that we are using inheritance in this class design to avoid code duplicity. We also notice that we are overriding some methods in TwoWheeler class &amp;amp; FourWheeler class; we also override some methods Bicycle, Scooter, Hatchback, SUV, Sedan classes respectively. We can create an object of say class Sedan like the following: 1Sedan sedan = new Sedan(); We also change the type of our reference variable to any of the superclass of Sedan, making use of Subtyping polymorphism (read more here).</description>
+    </item>
+    
     <item>
       <title>Method Overloading v/s Method Overriding</title>
       <link>https://namanjain2050.github.io/post/overloading-v-s-overriding/</link>
