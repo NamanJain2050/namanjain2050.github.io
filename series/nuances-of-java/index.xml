@@ -13,8 +13,7 @@
       <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://namanjain2050.github.io/post/more-on-subtyping-inheitance/</guid>
-      <description>Let&#39; see some examples of various cases of Inheritance &amp;amp; polymorphism.
-Example - 1 (Very basic) 1class A { 2 3 public void func() { 4 5 System.out.println(&amp;#34;Class A&amp;#39;s func&amp;#34;); 6 } 7 8 public void foo() { 9 10 System.out.println(&amp;#34;Class A&amp;#39;s foo&amp;#34;); 11 } 12} 1class Helper { 2 3 public static void main(String args[]) { 4 5 A a = new A(); 6 a.foo(); 7 a.func(); 8 } 9} Let&#39;s look at it visually: Output: 1Class A&amp;#39;s foo 2Class A&amp;#39;s func() Let&#39;s understand the output:</description>
+      <description>&lt;p&gt;Let&#39; see some examples of various cases of Inheritance &amp;amp; polymorphism.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,7 +22,7 @@ Example - 1 (Very basic) 1class A { 2 3 public void func() { 4 5 System.out.prin
       <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://namanjain2050.github.io/post/abstract-keyword/</guid>
-      <description>Introduction Consider the following class design: We can notice that we are using inheritance in this class design to avoid code duplicity. We also notice that we are overriding some methods in TwoWheeler class &amp;amp; FourWheeler class; we also override some methods in Bicycle, Scooter, Hatchback, SUV, Sedan classes respectively. We can create an object of say class Sedan like the following: 1Sedan sedan = new Sedan(); We can also change the type of our reference variable to any of the superclass of Sedan, making use of Subtyping polymorphism (read more here).</description>
+      <description>&lt;p&gt;We&#39;ll look at abstract keyword and see why we need it.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -32,8 +31,7 @@ Example - 1 (Very basic) 1class A { 2 3 public void func() { 4 5 System.out.prin
       <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://namanjain2050.github.io/post/overloading-v-s-overriding/</guid>
-      <description>In this post we&#39;ll see the subtle differences between method overloading and method overriding. We&#39;ll also look at the rules for doing overloading and overriding.s
-Method overloading In a class when we define multiple functions with same name but different argument list, it&#39;s called method overloading. For example: 1int add(int a, int b) { 2 int add(int a, int b) { 3 4 return a + b; 5} 6float add(float a, float b) { 7 8 return a + b; 9} 10double add(double a, int b) { 11 12 return a + b; 13} 14double add(int a, double b) { 15 16 return a + b; 17} Here we&#39;ve defined four functions with the name add.</description>
+      <description>&lt;p&gt;In this post we&#39;ll see the subtle differences between method overloading and method overriding. We&#39;ll also look at the rules for doing overloading and overriding.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -42,9 +40,7 @@ Method overloading In a class when we define multiple functions with same name b
       <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://namanjain2050.github.io/post/intro-to-polymorphism/</guid>
-      <description>Polymorphism (from Greek) means one shape many forms. In programming, it means to allow single symbol to perform different types of actions. It can also mean to provide single interface for entities of different types.
-A basic example Consider the following two lines of code:
-12 + 3; 2&amp;#34;hello&amp;#34; + &amp;#34;world&amp;#34;; First line will add the two operands and produce the sum as the result. The second line will concatenate the two operands and produce the concatenated string as the result.</description>
+      <description>&lt;p&gt;Polymorphism (from Greek) means one shape many forms. In programming, it means to allow single symbol to perform different types of actions. It can also mean to provide single interface for entities of different types.&lt;/p&gt;</description>
     </item>
     
     <item>
