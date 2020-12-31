@@ -6,7 +6,17 @@
     <description>Recent content in beginner on naman&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 29 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://namanjain2050.github.io/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://namanjain2050.github.io/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>More on Inheritance &amp; Subtyping polymorphism</title>
+      <link>https://namanjain2050.github.io/post/more-on-subtyping-inheitance/</link>
+      <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://namanjain2050.github.io/post/more-on-subtyping-inheitance/</guid>
+      <description>Let&#39; see some examples of various cases of Inheritance &amp;amp; polymorphism.
+Example - 1 (Very basic) 1class A { 2 3 public void func() { 4 5 System.out.println(&amp;#34;Class A&amp;#39;s func&amp;#34;); 6 } 7 8 public void foo() { 9 10 System.out.println(&amp;#34;Class A&amp;#39;s foo&amp;#34;); 11 } 12} 1class Helper { 2 3 public static void main(String args[]) { 4 5 A a = new A(); 6 a.foo(); 7 a.func(); 8 } 9} Let&#39;s look at it visually: Output: 1Class A&amp;#39;s foo 2Class A&amp;#39;s func() Let&#39;s understand the output:</description>
+    </item>
+    
     <item>
       <title>The &#34;abstract&#34; keyword - Abstract classes &amp; Methods</title>
       <link>https://namanjain2050.github.io/post/abstract-keyword/</link>
