@@ -148,6 +148,7 @@
     <li><a href="#example-6">Example 6</a></li>
     <li><a href="#example-7">Example 7</a></li>
     <li><a href="#example-8-hiding-variable">Example 8 (hiding variable)</a></li>
+    <li><a href="#takeaways">Takeaways</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ul>
 </nav>
@@ -453,6 +454,11 @@ Output:
 It turns out that we are wrong.
 Within the entire scope of the B class, the superclass field of the same name is hidden. So anytime we reference the simple name <code>a</code>, or the scoped name <code>this.a</code>, within the class, we are referring to the field that is defined in B.
 As for the second line: <strong>There is no polymorphism for fields in Java</strong> so accessing <code>a</code> using class A reference, even though we are creating an object of class B, will point to class A's instance variable only.</p>
+<h2 id="takeaways">Takeaways</h2>
+<ol>
+<li>You can call a method on an object only if the class of the reference variable has that method.</li>
+<li>No polymorphism when it comes to instance variables</li>
+</ol>
 <h2 id="acknowledgements">Acknowledgements</h2>
 <ol>
 <li><a href="https://stackoverflow.com/questions/15513467/polymorphism-with-instance-variables">https://stackoverflow.com/questions/15513467/polymorphism-with-instance-variables</a></li>
